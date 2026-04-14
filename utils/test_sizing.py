@@ -43,7 +43,7 @@ _HERE = os.path.dirname(os.path.abspath(__file__))
 if _HERE not in sys.path:
     sys.path.insert(0, _HERE)
 
-from detection import Detector
+from utils.detection import Detector
 
 IMAGE_SIZE = 256
 PAD_RATIO  = 0.05
