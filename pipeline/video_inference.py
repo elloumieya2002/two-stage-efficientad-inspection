@@ -28,7 +28,7 @@ _HERE = os.path.dirname(os.path.abspath(__file__))
 if _HERE not in sys.path:
     sys.path.insert(0, _HERE)
 
-from load_efficientad import load_efficientad_model
+from utils.load_efficientad import load_efficientad_model
 
 IMAGE_SIZE   = 256
 OUT_CHANNELS = 384
