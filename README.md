@@ -128,7 +128,6 @@ conda create -n inspection python=3.10
 conda activate inspection
 # To deactivate an active environment, use
 conda deactivate
-conda activate inspection
 
 # Install all dependencies in one command
 pip install torch torchvision ultralytics scikit-learn tqdm opencv-python pillow tifffile matplotlib boxmot
