@@ -121,12 +121,18 @@ two-stage-efficientad-inspection/
 git clone https://github.com/elloumieya2002/two-stage-efficientad-inspection
 cd two-stage-efficientad-inspection
 
-pip install torch torchvision
-pip install ultralytics          # YOLOv8
-pip install scikit-learn tqdm
-pip install opencv-python pillow
-pip install tifffile matplotlib
-pip install boxmot               # for DeepOCSORT (video_inference1.py only)
+
+# Create and activate the conda environment
+conda create -n inspection python=3.10
+# To activate this environment, use
+#     $ conda activate inspection
+# To deactivate an active environment, use
+#     $ conda deactivate
+conda activate inspection
+
+# Install all dependencies in one command
+pip install torch torchvision ultralytics scikit-learn tqdm opencv-python pillow tifffile matplotlib boxmot
+
 ```
 
 ---
