@@ -41,13 +41,13 @@ _HERE = os.path.dirname(os.path.abspath(__file__))
 if _HERE not in sys.path:
     sys.path.insert(0, _HERE)
 
-from load_efficientad import load_efficientad_model
-from pipeline         import InspectionPipeline
-from data_loader      import get_AD_dataset
-from metrics          import compute_all_metrics, print_results, save_quantitative_txt
-from visualisation    import (save_roc_curve, save_score_histogram,
-                               save_overlay, save_tiff,
-                               save_per_image_csv, print_per_image_table)
+from utils.load_efficientad import load_efficientad_model
+from utils.pipeline         import InspectionPipeline
+from utils.data_loader      import get_AD_dataset
+from utils.metrics          import compute_all_metrics, print_results, save_quantitative_txt
+from utils.visualisation    import (save_roc_curve, save_score_histogram,
+                                   save_overlay, save_tiff,
+                                   save_per_image_csv, print_per_image_table)
 
 IMAGE_SIZE = 256
 
