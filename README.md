@@ -10,7 +10,7 @@ Inspired by:
 
 ## Project Overview
 
-This system was built end-to-end from scratch for multi-instance unsupervised anomaly detection on a custom chewing-gum production dataset:
+This system was built for multi-instance unsupervised anomaly detection on a custom chewing-gum production dataset:
 
 1. **Video recording** of the production line → frame extraction → YOLOv8 training dataset
 2. **YOLOv8 fine-tuning** for multi-object detection (each gum piece as a separate instance)
