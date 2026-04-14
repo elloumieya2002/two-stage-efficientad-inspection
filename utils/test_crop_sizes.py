@@ -23,7 +23,7 @@ from PIL import Image
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, _HERE)
-from detection import Detector
+from utils.detection import Detector
 
 IMAGE_SIZE = 256
 
