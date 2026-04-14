@@ -49,10 +49,10 @@ import sys
 if _HERE not in sys.path:
     sys.path.insert(0, _HERE)
 
-from detection import Detector
-from load_efficientad import load_efficientad_model
-from efficientad_inference import run_inference, anomaly_map_to_heatmap
-from pipeline import preprocess_crop  # we reuse the exact preprocessing
+from utils.detection import Detector
+from utils.load_efficientad import load_efficientad_model
+from utils.efficientad_inference import run_inference, anomaly_map_to_heatmap
+from pipeline.pipeline import preprocess_crop
 
 IMAGE_SIZE = 256
 
