@@ -125,9 +125,9 @@ cd two-stage-efficientad-inspection
 # Create and activate the conda environment
 conda create -n inspection python=3.10
 # To activate this environment, use
-#     $ conda activate inspection
+conda activate inspection
 # To deactivate an active environment, use
-#     $ conda deactivate
+conda deactivate
 conda activate inspection
 
 # Install all dependencies in one command
