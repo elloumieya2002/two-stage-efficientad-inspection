@@ -25,8 +25,8 @@ _HERE = os.path.dirname(os.path.abspath(__file__))
 if _HERE not in sys.path:
     sys.path.insert(0, _HERE)
 
-from models      import Teacher, Student, AutoEncoder
-from data_loader import get_AD_dataset
+from utils.models      import Teacher, Student, AutoEncoder
+from utils.data_loader import get_AD_dataset
 
 IMAGE_SIZE   = 256
 OUT_CHANNELS = 384
