@@ -118,7 +118,7 @@ two-stage-efficientad-inspection/
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/two-stage-efficientad-inspection.git
+git clone https://github.com/elloumieya2002/two-stage-efficientad-inspection
 cd two-stage-efficientad-inspection
 
 pip install torch torchvision
