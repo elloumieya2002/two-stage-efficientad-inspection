@@ -7,21 +7,7 @@ Takes the raw Label Studio YOLO export and:
   3. Fine-tunes YOLOv8 on the annotated data
   4. Validates and prints final mAP
 
-Usage:
-    python prepare_and_train.py \
-        --dataset_dir  /home/ahmed/Downloads/chewinggums \
-        --out_dir      /home/ahmed/Downloads/chewinggum_detection_split \
-        --save_dir     ./yolo_runs \
-        --epochs       50 \
-        --device       0
 
-After training, use the best weights:
-    python build_crop_dataset.py \
-        --visa_root    /home/ahmed/Downloads/VisA_20220922 \
-        --out_dir      ./cropped_dataset \
-        --yolo_weights ./yolo_runs/chewinggum_finetune/weights/best.pt \
-        --target_class 0 \
-        --device       cuda
 """
 
 import os

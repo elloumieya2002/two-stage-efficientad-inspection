@@ -19,12 +19,7 @@ Output structure:
         ├── img001_crop001.png
         └── ...
 
-Usage:
-    python crop_dataset.py \
-        --input-dir  /home/ahmed/framework/chewinggum_gemini \
-        --out-dir    ./chewinggums_test \
-        --model      /home/ahmed/framework/runs/detect/yolo_runs/chewinggum_finetune2/weights/best.pt \
-        --class-id   000
+
 """
 
 import argparse

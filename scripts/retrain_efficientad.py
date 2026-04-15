@@ -17,27 +17,7 @@ Key differences from the original training:
 After training, the new checkpoints are fully self-consistent:
   student.pth, autoencoder.pth, quantiles.npy (with mean/std for crops)
 
-Usage:
-    python retrain_efficientad.py \
-        --dataset_path ./cropped_dataset \
-        --ckpt_dir     ./ckpt_cropped \
-        --teacher_path /home/ahmed/EfficientAD2/ckptSmall/best_teacher.pth \
-        --no_imagenet \
-        --category     chewinggum \
-        --model_size   S \
-        --iterations   70000 \
-        --device       cuda
 
-    # If you don't have ImageNet, use --no_imagenet (disables the ImageNet
-    # regularisation loss term N — slightly weaker but still works):
-    python retrain_efficientad.py \
-        --dataset_path ./cropped_dataset \
-        --ckpt_dir     ./ckpt_cropped \
-        --teacher_path /home/ahmed/EfficientAD2/ckptSmall/best_teacher.pth \
-        --no_imagenet \
-        --category     chewinggum \
-        --iterations   70000 \
-        --device       cuda
 """
 
 import os
@@ -76,7 +56,7 @@ def parse_args():
                    help='Where to save new checkpoints')
     p.add_argument('--teacher_path',  required=True,
                    help='Path to best_teacher.pth (kept frozen)')
-    p.add_argument('--imagenet_dir',  default=None,
+    p.add_argument('--imagenet_dir',  default="/home/ahmed/Downloads/dtd-r1.0.1/dtd/images",
                    help='ImageNet root dir for regularisation. '
                         'Use --no_imagenet if unavailable.')
     p.add_argument('--no_imagenet',   action='store_true',

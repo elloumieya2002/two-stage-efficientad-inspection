@@ -5,13 +5,6 @@ Diagnoses why EfficientAD scores are not separating normal vs anomaly.
 Prints raw quantile values, raw map statistics, and score distributions
 BEFORE and AFTER normalisation.
 
-Run:
-    python diagnose.py \
-        --ckpt_dir   /home/ahmed/EfficientAD2/ckptSmall \
-        --dataset_path /home/ahmed/Downloads/VisA_20220922 \
-        --category   chewinggum \
-        --model_size S \
-        --device     cuda
 """
 
 import os, sys, argparse
