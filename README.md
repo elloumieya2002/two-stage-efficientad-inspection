@@ -130,7 +130,7 @@ conda activate inspection
 conda deactivate
 
 # Install all dependencies in one command
-pip install torch torchvision ultralytics scikit-learn tqdm opencv-python pillow tifffile matplotlib boxmot
+pip install -r requirements.txt
 
 ```
 
